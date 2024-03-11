@@ -4,7 +4,6 @@ namespace AgroZamin\Integration\BusinessId;
 
 use AgroZamin\Integration\BusinessId\Exception\Http\NotFoundHttpException;
 use AgroZamin\Integration\BusinessId\Exception\Http\UnauthorizedHttpException;
-use AgroZamin\Integration\BusinessId\Trait\OrganizationTrait;
 use AgroZamin\Integration\Helper\Json;
 use AgroZamin\Integration\Integration;
 use AgroZamin\Integration\RequestData;
@@ -15,8 +14,6 @@ use Psr\Log\LoggerInterface;
 use Throwable;
 
 class BusinessId extends Integration {
-    use OrganizationTrait;
-
     protected const AUTHORIZATION_HEADER_NAME = 'Authorization';
 
     protected string $contentType = 'application/json';
@@ -108,7 +105,8 @@ class BusinessId extends Integration {
 
         return match ($response->getStatusCode()) {
             401 => new UnauthorizedHttpException($message, $code, $exception),
-            404 => new NotFoundHttpException($message, $code, $exception)
+            404 => new NotFoundHttpException($message, $code, $exception),
+            default => $exception
         };
     }
 }
