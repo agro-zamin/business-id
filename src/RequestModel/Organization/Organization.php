@@ -2,7 +2,7 @@
 
 namespace AgroZamin\Integration\BusinessId\RequestModel\Organization;
 
-use AgroZamin\Integration\BusinessId\DTO\organization\Organization as OrganizationDTO;
+use AgroZamin\Integration\BusinessId\DTO\Organization\Organization as OrganizationDTO;
 use AgroZamin\Integration\RequestModel;
 
 class Organization extends RequestModel {

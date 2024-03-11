@@ -1,6 +1,6 @@
 <?php
 
-namespace AgroZamin\Integration\BusinessId\DTO\organization;
+namespace AgroZamin\Integration\BusinessId\DTO\Organization;
 
 use AgroZamin\Integration\DTO;
 
