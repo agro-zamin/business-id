@@ -3,7 +3,6 @@
 namespace AgroZamin\Integration\BusinessId\RequestModel\Organization;
 
 use AgroZamin\Integration\BusinessId\DTO\organization\Organization as OrganizationDTO;
-use AgroZamin\Integration\DTO;
 use AgroZamin\Integration\RequestModel;
 
 class Organization extends RequestModel {
@@ -47,9 +46,9 @@ class Organization extends RequestModel {
     /**
      * @param array $data
      *
-     * @return DTO
+     * @return OrganizationDTO
      */
-    public function buildDto(array $data): DTO {
+    public function buildDto(array $data): OrganizationDTO {
         return new OrganizationDTO($data['body']['Organization']);
     }
 
