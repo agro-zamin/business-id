@@ -7,7 +7,7 @@ use AgroZamin\Integration\DTO;
 class Employee extends DTO {
     public string $id;
     public string $position;
-    public string $role_id;
+    public string $roleId;
     public User $user;
 
     /**
@@ -15,7 +15,8 @@ class Employee extends DTO {
      */
     protected function properties(): array {
         return [
-            'user' => [User::class, 'user']
+            'user' => [User::class, 'user'],
+            'roleId' => [fn(string $roleId) => $roleId, 'role_id']
         ];
     }
 }

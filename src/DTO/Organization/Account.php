@@ -6,7 +6,7 @@ use AgroZamin\Integration\DTO;
 
 class Account extends DTO {
     public string $id;
-    public bool $is_main;
+    public bool $isMain;
     public string $number;
     public Bank $bank;
 
@@ -15,6 +15,7 @@ class Account extends DTO {
      */
     protected function properties(): array {
         return [
+            'isMain' => [fn(bool $isMain) => $isMain, 'is_main'],
             'bank' => [Bank::class, 'bank']
         ];
     }

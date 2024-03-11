@@ -2,6 +2,7 @@
 
 namespace AgroZamin\Integration\BusinessId\DTO\Organization;
 
+use AgroZamin\Integration\BusinessId\DTO\Service\Connection;
 use AgroZamin\Integration\DTO;
 
 /**
@@ -9,20 +10,15 @@ use AgroZamin\Integration\DTO;
  */
 class Organization extends DTO {
     public string $id;
-    public int $business_id;
+    public int $businessId;
     public int $tin;
     public string $name;
     public string $address;
     public Logo|null $logo;
-    public User $creator;
-    public Employee|null $director;
-    public Employee|null $accountant;
-    public Employee|null $employee;
-    public Account|null $account;
-    public array $accounts = [];
     public Contacts $contacts;
-    public string $create_time;
-    public string $last_update_time;
+    public Connection $connection;
+    public string $createTime;
+    public string $lastUpdateTime;
 
     /**
      * @return array[]
@@ -30,12 +26,12 @@ class Organization extends DTO {
     protected function properties(): array {
         return [
             'logo' => [Logo::class, 'logo'],
-            'creator' => [User::class, 'creator'],
-            'director' => [Employee::class, 'director'],
-            'accountant' => [Employee::class, 'accountant'],
-            'employee' => [Employee::class, 'employee'],
-            'account' => [Account::class, 'account'],
             'contacts' => [Contacts::class, 'contacts'],
+            'connection' => [Connection::class, 'connection'],
+            //
+            'businessId' => [fn(int $businessId) => $businessId, 'business_id'],
+            'createTime' => [fn(string $time) => $time, 'create_time'],
+            'lastUpdateTime' => [fn(string $time) => $time, 'last_update_time'],
         ];
     }
 }
