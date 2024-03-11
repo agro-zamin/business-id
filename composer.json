@@ -1,0 +1,21 @@
+{
+  "name": "agrozamin/biznes-id",
+  "description": "Loyihalar-aro \"Agrozamin: BusinessID\" tizimidan foydalanish uchun kutubxona",
+  "type": "library",
+  "keywords": [],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ibragimov Diyorbek",
+      "email": "uzdevid@gmail.com"
+    }
+  ],
+  "require": {
+    "agrozamin/integrations": "^1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AgroZamin\\Integrations\\BusinessId\\": "src"
+    }
+  }
+}
