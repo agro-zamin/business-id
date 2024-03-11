@@ -1,9 +1,9 @@
 <?php
 
-namespace AgroZamin\Integrations\BusinessId\Trait;
+namespace AgroZamin\Integration\BusinessId\Trait;
 
-use AgroZamin\Integrations\BusinessId\DTO\organization\Organization;
-use AgroZamin\Integrations\BusinessId\RequestModel\Organization\OrganizationRequestModel;
+use AgroZamin\Integration\BusinessId\DTO\organization\Organization;
+use AgroZamin\Integration\BusinessId\RequestModel\Organization\OrganizationRequestModel;
 use GuzzleHttp\Exception\GuzzleException;
 use Throwable;
 

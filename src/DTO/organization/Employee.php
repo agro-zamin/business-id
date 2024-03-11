@@ -1,8 +1,8 @@
 <?php
 
-namespace AgroZamin\Integrations\BusinessId\DTO\organization;
+namespace AgroZamin\Integration\BusinessId\DTO\organization;
 
-use AgroZamin\Integrations\DTO;
+use AgroZamin\Integration\DTO;
 
 class Employee extends DTO {
     public string $id;

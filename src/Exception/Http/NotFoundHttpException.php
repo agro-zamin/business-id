@@ -1,6 +1,6 @@
 <?php
 
-namespace AgroZamin\Integrations\BusinessId\Exception\Http;
+namespace AgroZamin\Integration\BusinessId\Exception\Http;
 
 use Exception;
 

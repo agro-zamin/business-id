@@ -1,13 +1,13 @@
 <?php
 
-namespace AgroZamin\Integrations\BusinessId;
+namespace AgroZamin\Integration\BusinessId;
 
-use AgroZamin\Integrations\BusinessId\Exception\Http\NotFoundHttpException;
-use AgroZamin\Integrations\BusinessId\Exception\Http\UnauthorizedHttpException;
-use AgroZamin\Integrations\BusinessId\Trait\OrganizationTrait;
-use AgroZamin\Integrations\Helper\Json;
-use AgroZamin\Integrations\Integration;
-use AgroZamin\Integrations\RequestData;
+use AgroZamin\Integration\BusinessId\Exception\Http\NotFoundHttpException;
+use AgroZamin\Integration\BusinessId\Exception\Http\UnauthorizedHttpException;
+use AgroZamin\Integration\BusinessId\Trait\OrganizationTrait;
+use AgroZamin\Integration\Helper\Json;
+use AgroZamin\Integration\Integration;
+use AgroZamin\Integration\RequestData;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\ResponseInterface;

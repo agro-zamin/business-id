@@ -1,5 +1,5 @@
 {
-  "name": "agrozamin/biznes-id",
+  "name": "agro-zamin/biznes-id",
   "description": "Loyihalar-aro \"Agrozamin: BusinessID\" tizimidan foydalanish uchun kutubxona",
   "type": "library",
   "keywords": [],
@@ -11,11 +11,11 @@
     }
   ],
   "require": {
-    "agrozamin/integrations": "^1.0.0"
+    "agro-zamin/integration": "^1.0.0"
   },
   "autoload": {
     "psr-4": {
-      "AgroZamin\\Integrations\\BusinessId\\": "src"
+      "AgroZamin\\Integration\\BusinessId\\": "src"
     }
   }
 }

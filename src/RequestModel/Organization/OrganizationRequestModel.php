@@ -1,9 +1,9 @@
 <?php
 
-namespace AgroZamin\Integrations\BusinessId\RequestModel\Organization;
+namespace AgroZamin\Integration\BusinessId\RequestModel\Organization;
 
-use AgroZamin\Integrations\BusinessId\RequestModel\Organization\ResultType\Organization as OrganizationResultType;
-use AgroZamin\Integrations\BusinessId\RequestModel\Organization\ResultType\Organizations;
+use AgroZamin\Integration\BusinessId\RequestModel\Organization\ResultType\Organization as OrganizationResultType;
+use AgroZamin\Integration\BusinessId\RequestModel\Organization\ResultType\Organizations;
 
 class OrganizationRequestModel {
     /**

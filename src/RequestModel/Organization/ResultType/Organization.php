@@ -1,9 +1,9 @@
 <?php
 
-namespace AgroZamin\Integrations\BusinessId\RequestModel\Organization\ResultType;
+namespace AgroZamin\Integration\BusinessId\RequestModel\Organization\ResultType;
 
-use AgroZamin\Integrations\BusinessId\DTO\organization\Organization as OrganizationDTO;
-use AgroZamin\Integrations\RequestModel;
+use AgroZamin\Integration\BusinessId\DTO\organization\Organization as OrganizationDTO;
+use AgroZamin\Integration\RequestModel;
 
 class Organization extends RequestModel {
     private array $_queryParams = [];
