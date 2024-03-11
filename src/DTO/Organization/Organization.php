@@ -16,7 +16,7 @@ class Organization extends DTO {
     public string $address;
     public Logo|null $logo;
     public Contacts $contacts;
-    public Connection $connection;
+    public Connection|null $connection;
     public string $createTime;
     public string $lastUpdateTime;
 
